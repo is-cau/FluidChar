@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>流体粒子 — Fluid Particles</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #06060f;
+      overflow: hidden;
+      cursor: crosshair;
+      font-family: "Microsoft YaHei", "PingFang SC", "SimHei", sans-serif;
+    }
+    canvas { display: block; }
+    #hint {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.3); font-size: 13px; pointer-events: none;
+      letter-spacing: 2px;
+    }
+  </style>
+  <script type="module" crossorigin src="/FluidChar/assets/index-Jnk8AEyO.js"></script>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="hint">移动鼠标扰动 · 滚轮调力度 · 数字键切换配色 · 空格暂停</div>
+</body>
+</html>
