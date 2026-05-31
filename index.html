@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>汉字流体 — Chinese Character Fluid</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #06060f;
+      overflow: hidden;
+      cursor: crosshair;
+      font-family: "Microsoft YaHei", "PingFang SC", "SimHei", sans-serif;
+    }
+    canvas { display: block; }
+    #hint {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      color: rgba(255,255,255,0.3); font-size: 13px; pointer-events: none;
+      letter-spacing: 2px;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="hint">移动鼠标扰动 · 滚轮调力度 · 空格暂停</div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
